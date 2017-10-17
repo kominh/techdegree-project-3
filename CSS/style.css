@@ -1,0 +1,285 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+
+}
+
+
+h5 {
+  text-align: center;
+ }
+
+ #line1 {
+  width: 250px;
+  height: 3.5px;
+  background-color: #203556;
+  margin-bottom: 2px;
+
+ }
+
+ #line2 {
+  width: 250px;
+  height: 1px;
+  background-color: #203556;
+  margin-top: 2px;
+ }
+ 
+ hr {
+  height: 1px;
+  background-color: #203556;
+ }
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+
+  width: 90%;
+  margin: 0 auto;
+ }
+
+
+
+.main-heading,
+.main-header {
+  text-align: center;
+  padding-top: 10px;
+  background: none;
+  
+ }
+
+.main-header {
+  background: #203556;
+  padding: .5em 0;
+  margin-bottom: 5px;
+  color: white;
+  padding-top: 20px;
+}
+
+.main-heading {
+  padding-top: 4px;
+  margin-top: 12px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+
+.main-heading p {
+  padding-bottom: 20px;
+
+}
+ .container,
+ p {
+  margin-top: -12px;
+ }
+
+fieldset {
+  margin-bottom: 15px;
+  margin-top: 20px;
+  border: none;
+}
+
+#fieldset2 {
+  margin-top: -10px;
+}
+
+legend {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.glowing-border:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 2px 2px 2px #9ecaed;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea,
+#states {
+  border-radius: 2px;
+
+}
+
+
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="street"],
+input[type="cities"],
+input[type="states"],
+input[type="zip"],
+textarea,
+select {
+
+margin: 0;
+padding: 5px;
+width: 100%;
+background-color: #f7e8e6;
+margin-bottom: 15px;
+border-width: 1px;
+
+} 
+
+
+input[required]::placeholder {
+  color: #d0dcef;
+  text-align: right;
+  text-transform: capitalize;
+  padding-right: 2%;
+  font-style: italic;
+  font-size: 0.937em;
+}
+
+
+input[type="zip"] {
+  width: 120px;
+
+}
+
+textarea {
+  height: 110px;
+  margin-bottom: 0;
+}
+
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #2ac19e;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  margin-bottom: 20px;
+ 
+  
+  
+}
+
+
+
+footer {
+  font-size: 15px;
+  font-style: italic;
+  color: darkgrey;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* ---- Page Elements ---- */
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+
+
+   .container {
+    width: 70%
+    
+  }
+
+header {
+  color: white;
+
+
+}
+
+
+ #line1,
+ #line2 {
+    width: 95%;
+  }
+
+  #line1 {
+    margin-top: 25px;
+    margin-bottom: -7px;
+  }
+ 
+ #line3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+ }
+
+.contact-info div {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+
+}
+
+.contact-info label {
+  margin: auto 0;
+  width: 10%;
+  min-width: 8.8em;
+
+}
+
+
+
+#zipcode {
+  width: 30%;
+
+}
+
+button {
+ width: 100%;  /*** work on button and add highlighted selected input items and check box. */
+}
+
+footer {
+  font-size: 16px;
+  font-style: italic;
+  color: darkgrey;
+
+}
+
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
