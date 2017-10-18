@@ -100,7 +100,7 @@ legend {
 .glowing-border:focus { 
     outline: none;
     border-color: #9ecaed;
-    box-shadow: 2px 2px 2px #9ecaed;
+    
 }
 
 label {
@@ -116,10 +116,25 @@ textarea,
 }
 
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="street"],
+input[type="cities"],
+input[type="states"],
+input[type="number"],
+textarea,
+select {
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: #f7e8e6;
+  margin-bottom: 15px;
+  border-width: 2px;
+} 
 
 
-
-
+/***
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -138,15 +153,17 @@ margin-bottom: 15px;
 border-width: 1px;
 
 } 
+*/
 
-
-input[required]::placeholder {
+input[type="text"],[type="email"]::placeholder {
   color: #d0dcef;
   text-align: right;
   text-transform: capitalize;
-  padding-right: 2%;
+  padding-right: 5px;
   font-style: italic;
   font-size: 0.937em;
+  color: gray;
+  
 }
 
 
@@ -201,7 +218,7 @@ footer {
 ==================================== */
 
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
 
    .container {
@@ -254,8 +271,14 @@ header {
 
 }
 
+
 button {
- width: 100%;  /*** work on button and add highlighted selected input items and check box. */
+ max-width: 100%;  /*** work on button and add highlighted selected input items and check box. */
+}
+.sign_up {
+  
+  width: 94.5%;
+
 }
 
 footer {

@@ -50,34 +50,34 @@
 
 									<div>
 									<label for="name">Full Name</label>
-									<input class="glowing-border" type="text" id="name" name="user_name" placeholder="Required" required>
+									<input class="glowing-border" type="text" id="name" name="user_name" placeholder="Required" required="">
 									</div>
 
 									<div>
 									<label for="mail">Email:</label>
-            						<input class="glowing-border" type="email" id="mail" name="user_email" placeholder="required" 	required>
+            						<input class="glowing-border" type="email" id="mail" name="user_email" placeholder="Required">
             						</div>
 
             						<div>
             						<label for="phone">Phone Number:</label>
-            						<input class="glowing-border" type="number" id="phone" name="user_phone">
+            						<input class="glowing-border" type="tel" id="phone" name="user_phone">
             						</div>
 
 
             						<div>
             						<label for="street">Street Address</label>
-            						<input class="glowing-border" type="street" id="street" name="user_address">
+            						<input class="glowing-border" type="text" id="street" name="user_address">
             						</div>
 
             						<div>
             						<label for="cities">City</label>
-            						<input type="cities" id="cities" name="user_city">
+            						<input class="glowing-border" type="text" id="cities" name="user_city">
             						</div>
 
             						<div>
             						<label for="states">State</label>
             						
-            						<select id="states" name="user_state">
+            						<select id="states" name="user_state" class="glowing-border">
 
             						<option value="" disabled selected="selected">Choose State</option>
 
@@ -137,7 +137,7 @@
 								    <div>
             						<label for="zipcode">Zip Code</label>
             						<br>
-            						<input type="zip" id="zipcode" name="user_zip">	
+            						<input class="glowing-border" type="number" id="zipcode" name="user_zip">	
             						</div>
 
             						<hr id="line3">
@@ -150,13 +150,13 @@
 									<p>Select the newsletters you would like to recieve</p>
 
 
-									<input type="checkbox" id="html_news" value="html_news" name="user_news">
+									<input type="checkbox" id="html_news" value="html_news" name="checkbox">
 									<label for="html_news" class="light">HTML News</label>
 									<br>	
-									<input type="checkbox" id="css_news" value="css_news" name="user_css">
+									<input type="checkbox" id="css_news" value="css_news" name="checkbox">
 									<label for="css_news" class="light">CSS News</label>
 									<br>
-									<input type="checkbox" id="javascript_news" value="javascript_news" name="user_javascript"> 
+									<input type="checkbox" id="javascript_news" value="javascript_news" name="checkbox"> 
 									<label for="javascript_news" class="light">Javascript News</label>	
 									
 									<br>
@@ -164,23 +164,23 @@
 
 									<p>Newsletter format</p>
 
-									<input type="radio" id="html" value="html" name="html">
+									<input type="radio" id="html" value="html" name="radio_button">
 									<label for="html" class="light">HTML</label>
 									<br>	
-									<input type="radio" id="plain_text" value="plain_text" name="plain_text">
+									<input type="radio" id="plain_text" value="plain_text" name="radio_button">
 									<label for="plain_text" class="light">Plain Text</label>
 									<br>
 									<br>
 									<p>Other topics you'd like to hear about</p>
 									
-									<textarea id="topics" name="user_topics"></textarea>
+									<textarea class="glowing-border" id="topics" name="user_topics"></textarea>
 
 
 
 							</fieldset>
 
 							<br>
-							<div class="container">
+							<div class="container sign_up">
 							<button type="submit">Sign Up</button>
 							</div>
 
