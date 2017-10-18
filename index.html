@@ -55,7 +55,7 @@
 
 									<div>
 									<label for="mail">Email:</label>
-            						<input class="glowing-border" type="email" id="mail" name="user_email" placeholder="Required">
+            						<input class="glowing-border" type="email" id="mail" name="user_email" placeholder="Required" required="">
             						</div>
 
             						<div>
@@ -79,7 +79,7 @@
             						
             						<select id="states" name="user_state" class="glowing-border">
 
-            						<option value="" disabled selected="selected">Choose State</option>
+            						<option value="" disabled hidden selected="selected">Choose State</option>
 
             								
 								                  <option value="alabama">Alabama</option>
@@ -150,13 +150,13 @@
 									<p>Select the newsletters you would like to recieve</p>
 
 
-									<input type="checkbox" id="html_news" value="html_news" name="checkbox">
+									<input type="checkbox" id="html_news" value="html_news" name="checkbox_html">
 									<label for="html_news" class="light">HTML News</label>
 									<br>	
-									<input type="checkbox" id="css_news" value="css_news" name="checkbox">
+									<input type="checkbox" id="css_news" value="css_news" name="checkbox_css">
 									<label for="css_news" class="light">CSS News</label>
 									<br>
-									<input type="checkbox" id="javascript_news" value="javascript_news" name="checkbox"> 
+									<input type="checkbox" id="javascript_news" value="javascript_news" name="checkbox_javascript"> 
 									<label for="javascript_news" class="light">Javascript News</label>	
 									
 									<br>
@@ -171,9 +171,10 @@
 									<label for="plain_text" class="light">Plain Text</label>
 									<br>
 									<br>
-									<p>Other topics you'd like to hear about</p>
 									
-									<textarea class="glowing-border" id="topics" name="user_topics"></textarea>
+									
+									<label for="topics">Other topics you'd like to hear about</label>
+									<textarea type="textfield" class="glowing-border" id="topics" name="user_topics"></textarea>
 
 
 
